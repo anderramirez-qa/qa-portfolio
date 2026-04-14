@@ -1,10 +1,10 @@
 # QA Portfolio
 
-This repository contains my manual testing projects.
+Manual testing portfolio focused on real-world scenarios.
 
 ## Skills
 - Test Case Design
-- Bug Detection
+- Bug Reporting
 - Boundary Testing
 - Validation Testing
 
@@ -16,6 +16,10 @@ This repository contains my manual testing projects.
 ## Projects
 
 ### Project 1: Profile Testing
-- Created test cases for user profile update functionality
-- Covered positive and negative scenarios
-- Included boundary testing and validation cases
+- Created test cases for user profile functionality
+- Identified and documented multiple bugs
+- Covered positive, negative and boundary scenarios
+
+📂 Files:
+- test_cases.md
+- bug_reports.md
