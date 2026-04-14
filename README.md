@@ -1,25 +1,27 @@
-# QA Portfolio
+# QA Manual Testing Portfolio
 
-Manual testing portfolio focused on real-world scenarios.
+Hi, I'm a Junior QA Tester transitioning into tech.
 
-## Skills
+This repository showcases my hands-on experience in manual testing, including test case design and bug reporting using real-world scenarios.
+
+## 🔧 Skills
 - Test Case Design
 - Bug Reporting
 - Boundary Testing
 - Validation Testing
 
-## Tools
+## 🛠 Tools
 - Jira
-- Postman
+- Postman (learning)
 - GitHub
 
-## Projects
+## 📂 Projects
 
-### Project 1: Profile Testing
-- Created test cases for user profile functionality
+### Project 1: Profile Testing (Buggy Cars)
+- Designed and executed test cases for user profile functionality
 - Identified and documented multiple bugs
 - Covered positive, negative and boundary scenarios
 
-📂 Files:
+📄 Files:
 - test_cases.md
 - bug_reports.md
