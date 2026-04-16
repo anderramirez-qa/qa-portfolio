@@ -142,7 +142,7 @@ FAIL
 ## TC_REGISTRATION_004 — Registration fails with invalid phone number (shorter than 10 characters)
 
 ### Feature
-Employee Registration Managment
+Employee Registration Form
 
 ### Priority
 High
@@ -182,10 +182,10 @@ Fail
 
 ---
 
-## TC_REGISTRATION_005 - Registration fails with contradictory Age and Date of Birth data
+## TC_REGISTRATION_005 — Registration fails with inconsistent Age and Date of Birth
 
 ### Feature
-Employee registration Managment
+Employee Registration Form
 
 ### Priority
 High
@@ -193,43 +193,37 @@ High
 ### Severity
 Critical
 
-### Preconditions
-- User is logged into the system with HR admin permissions
-- User has access to Employee Registration module
-- User is on the Employee Registration form page
-
 ### Test Data
-1. Age: 25
-2. Date of Birth: 21/07/2005
-3. Remaining fields: valid data
+- Age: 25
+- Date of Birth: 21/07/2005
+- Remaining fields: valid data
 
 ### Steps to Reproduce
 1. Log in to the system with HR admin credentials
 2. Navigate to Employee Registration page
 3. Enter "25" in Age field
-4. Set Date of Birth to "21/07/2005"
-5. Fill the rest of the fields with valid data
-6. Click on "submit"
+4. Enter "21/07/2005" in Date of Birth field
+5. Fill the remaining fields with valid data
+6. Click on "Submit"
 
 ### Expected Result
 - Employee should not be registered
-- Validation error message should be displayed for both fields as ages don't match
-- Employee data should not be added to the table
+- System should validate consistency between Age and Date of Birth
+- Validation error message should be displayed
 
 ### Actual Result
 - Employee is registered
-- No validation error message is displayed for either field
-- System accepts contradictory data on Age and Birth of Date fields
+- No validation error is displayed
+- System accepts inconsistent data
 
 ### Status
-Fail
-
+FAIL
 ---
 
 ## TC_REGISTRATION_006 - Registration fails with wrong form of data in Age field
 
 ### Feature
-Employee Registration Managment
+Employee Registration Form
 
 ### Priority
 Medium
@@ -269,7 +263,7 @@ Pass
 ## TC_REGISTRATION_007 - Registration fails with negative value in Expected Salary field
 
 ### Feature
-Employee Registration Managment
+Employee Registration Form
 
 ### Priority
 High
@@ -311,7 +305,7 @@ Fail
 ## TC_REGISTRATION_008 - Registration fails with values out of the accepted range for Age field
 
 ### Feature
-Employee Registration Managment
+Employee Registration Form
 
 ### Priority
 High
@@ -350,10 +344,10 @@ Fail
 
 ---
 
-## TC_REGISTRATION_009 - Registration is successful with boundarys values for Age field (Boundary test)
+## TC_REGISTRATION_009 — Registration behavior at boundary values for Age field
 
 ### Feature
-Employee Registration managment
+Employee Registration Management
 
 ### Priority
 High
@@ -361,42 +355,35 @@ High
 ### Severity
 Critical
 
-### Preconditions
-- User is logged into the system with HR admin permissions
-- User has access to Employee Registration module
-- User is on the Employee Registration form page
-
 ### Test Data
-1. Age: 18 and 65
-2. Remaining fields: valid data
+- Age: 18 and 65
+- Remaining fields: valid data
 
 ### Steps to Reproduce
 1. Log in to the system with HR admin credentials
 2. Navigate to Employee Registration page
-3. Enter "18" and "65" in Age field
-4. Complete the rest of the fields with valid data
-5. Click on "submit"
+3. Enter "18" in Age field and complete form
+4. Submit the form
+5. Repeat with "65" in Age field
 
 ### Expected Result
-- Employee should be registered with either values
-- Success confirmation message shoul be displayed
-- Employee data should be added to the table
+- Employee should be registered successfully with both values
+- System should accept boundary values (18 and 65)
 
 ### Actual Result
-- When the value is "18" the registration is completed successfully
-- However, when the value is "65" the employee cannot be registered and error message is displayed
-- Validation error message displays contradictory information, as it says 65 is the maximum age accepted
-- System rejects valid value "65" and employee is not registered
+- Age "18" works correctly
+- Age "65" is rejected
+- Error message contradicts validation rules
 
 ### Status
-Fail
+FAIL
 
 ---
 
 ## TC_REGISTRATION_010 - Registration fails with future dates of birth
 
 ### Feature
-Employee Registration Managment
+Employee Registration Form
 
 ### Priority
 Medium
@@ -438,7 +425,7 @@ Fail
 ## TC_REGISTRATION_011 - Registration fails with invalid form of Email
 
 ### Feature
-Employee Registration Managment
+Employee Registration Form
 
 ### Priority
 High
