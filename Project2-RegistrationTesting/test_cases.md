@@ -4,7 +4,7 @@
 
 ---
 
-## TC_REGISTRATION_001 — Employee is registered with valid data
+## TC_REGISTRATION_001 — Employee is successfully registered with valid data
 
 ### Feature
 Employee Registration Form
@@ -31,29 +31,30 @@ Critical
 - Job Title: QA Tester
 - Department: Logistics
 - Contract Status: Active
-- Schedule: 9am-17pm
+- Schedule: 9am–5pm
 - Profile Link: https://github.com/anderramirez-qa
-- Expected Salary: 30.000
+- Expected Salary: 30000
 
 ### Steps to Reproduce
-1. Log in into the system with HR admin permissions
-2. Open Employee Registration form
-3. Enter valid data in all required fields
+1. Log in to the system with HR admin credentials
+2. Navigate to Employee Registration page
+3. Fill in all required fields with valid data
+4. Click on "Submit"
 
 ### Expected Result
-- Employee is registered successfuly
+- Employee is successfully registered
 - Success confirmation message is displayed
-- Employee's information is visible on the chart
+- Employee information is displayed in the table
 
 ### Actual Result
-Employee is registered successfully
+Employee is successfully registered
 
 ### Status
 PASS
 
 ---
 
-## TC_REGISTRATION_002 — Employee is registered with missing data
+## TC_REGISTRATION_002 — Registration fails when mandatory fields are missing
 
 ### Feature
 Employee Registration Form
@@ -62,7 +63,7 @@ Employee Registration Form
 High
 
 ### Severity
-Critical
+Major
 
 ### Preconditions
 - User is logged into the system with HR admin permissions
@@ -70,36 +71,31 @@ Critical
 - User is on the Employee Registration form page
 
 ### Test Data
-- Age: 25
-- Date of Birth: 21/07/2000
-- Gender: Male
-- Email: anderramirez.qa@gmail.com
-- Phone Number: +3464026033
-- Job Title: QA Tester
-- Department: Logistics
-- Contract Status: Active
-- Schedule: 9am-17pm
-- Expected Salary: 30.000
+- Full Name: (empty)
+- Address: (empty)
+- Remaining fields: valid data
 
 ### Steps to Reproduce
-1. Log in into the system with HR admin permissions
-2. Open Employee Registration form
-3. Fill all mandatory fields except "Name" and "Address" fields
+1. Log in to the system with HR admin credentials
+2. Navigate to Employee Registration page
+3. Leave "Full Name" and "Address" fields empty
+4. Fill the rest of the fields with valid data
+5. Click on "Submit"
 
 ### Expected Result
-- Employee cannot be registered
-- Error message is displayed indicating registration requirements
-- Employee's information is not reflected on the chart
+- Employee should not be registered
+- Validation error messages should be displayed for required fields
+- Employee data should not be added to the table
 
 ### Actual Result
-Employee is not registered and error messages are displayed
+Employee is not registered and validation error messages are displayed
 
 ### Status
 PASS
 
 ---
 
-## TC_REGISTRATION_003 — Employee is registered with invalid data
+## TC_REGISTRATION_003 — Registration fails with invalid data in Name and Age fields
 
 ### Feature
 Employee Registration Form
@@ -118,33 +114,29 @@ Critical
 ### Test Data
 - Full Name: 123
 - Age: 80
-- Date of Birth: 21/07/2000
-- Gender: Male
-- Adress: Calle Izaro 16
-- Email: anderramirez.qa@gmail.com
-- Phone Number: +3464026033
-- Job Title: QA Tester
-- Department: Logistics
-- Contract Status: Active
-- Schedule: 9am-17pm
-- Profile Link: https://github.com/anderramirez-qa
-- Expected Salary: 30.000
+- Remaining fields: valid data
 
 ### Steps to Reproduce
-1. Log in into the system with HR admin permissions
-2. Open Employee Registration form
-3. Enter inavild data in "Name" and "Age" fields
-4. Fill the rest of mandatory fields with valid data
+1. Log in to the system with HR admin credentials
+2. Navigate to Employee Registration page
+3. Enter "123" in Full Name field
+4. Enter "80" in Age field
+5. Fill the rest of the fields with valid data
+6. Click on "Submit"
 
 ### Expected Result
-- Employee cannot be registered
-- Erorr messages are displayed indicating fields requirements
-- Employee's information is not shown on the chart
+- Employee should not be registered
+- Validation error messages should be displayed for invalid fields
+- System should reject both invalid Name and Age inputs
+- Employee data should not be added to the table
 
 ### Actual Result
-Employee is not registered and error message is shown on the "Age" field. However wrong name data is accepted
+- Employee is not registered
+- Validation error message is displayed for Age field
+- Invalid Name value ("123") is accepted
 
 ### Status
-Fail
-
+FAIL
 ---
+
+## TC_REGISTRATION_004 —
