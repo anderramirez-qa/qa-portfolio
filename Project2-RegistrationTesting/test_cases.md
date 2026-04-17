@@ -2,6 +2,7 @@
 
 # 🧪 Employee Registration Testing - Test Cases
 
+URL: https://testing1.geekqa.net/
 ---
 
 ## TC_REGISTRATION_001 — Employee is successfully registered with valid data
