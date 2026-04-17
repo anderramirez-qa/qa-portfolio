@@ -1,6 +1,6 @@
 ## Project: GeekRetail Registration Testing
 
-# 🐞 Bug Reports - Geek Retail
+# 🐞 Bug Reports - GeekRetail
 
 ---
 
