@@ -2,6 +2,7 @@
 
 # 🐞 Bug Reports - Buggy Cars
 Application: https://buggy.justtestit.org/
+
 ---
 
 ## 🐞 BG001 — Incorrect validation message for Last Name field on Registration page
