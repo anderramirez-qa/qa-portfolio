@@ -85,7 +85,7 @@ Critical
 System accepts inconsistent data between Age and Date of Birth fields
 
 ### Steps to Reproduce
-1. Open Employee Registration Form
+1. Open Employee Registration form
 2. Enter any number in the Age field (e.g., 25)
 3. Choose a different date in the Date of Birth field (e.g., 21/07/2010)
 4. Fill the remaining fields with valid data
@@ -98,6 +98,38 @@ System accepts inconsistent data between Age and Date of Birth fields
 ### Actual Result
 - System accepts different values for Age and Date of Birth fields
 - Employee is registered and added to the table
+
+### Status
+Open
+
+---
+
+## 🐞 BG004 - Expected Salary column always displays "0"
+
+### Environment
+Windows 10, Google Chrome (Version 147.0.7727.56)
+
+### Priority
+High
+
+### Severity
+Critical
+
+### Description
+The Expected Salary column always displays "0" regardless of the value entered in the field
+
+### Steps to Reproduce
+1. Open Employee Registration form
+2. Enter any valid data in the Expected Salary field (e.g., 30000)
+3. Fill the remaining fields with valid data
+4. Click on "submit"
+
+### Expected Result
+- Employee registration should be successfull and displayed correctly on the table
+- Expected Salary column should displayed the entered data
+
+### Actual Result
+- Expected Salary column always displays "0" regardless of the data entered in the field
 
 ### Status
 Open
