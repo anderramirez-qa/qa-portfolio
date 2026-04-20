@@ -1,21 +1,33 @@
 # QA Manual Testing Portfolio
 
-Hi, I'm a Junior QA Tester transitioning into tech.
+Hi, I'm a Junior QA Tester transitioning into tech with a background in Journalism.
 
-This repository showcases my hands-on experience in manual testing, including test case design and bug reporting using real-world scenarios.
+This repository showcases my hands-on experience in manual testing using real-world applications, including test case design, validation testing and bug reporting.
+
+---
 
 ## 🔧 Skills
+
 - Test Case Design
 - Bug Reporting
 - Boundary Testing
 - Validation Testing
+- Negative Testing
+- Functional Testing
+
+---
 
 ## 🛠 Tools
-- Jira
+
+- Jira (learning)
 - Postman (learning)
 - GitHub
 
+---
+
 ## 📂 Projects
+
+---
 
 ### 🔹 Project 1: Profile Testing (Buggy Cars)
 
@@ -43,33 +55,38 @@ Tested user profile functionality focusing on validation rules and data integrit
 Tested a complex employee registration form with multiple input types and validation rules.
 
 **What I tested:**
-- Mandatory fields validation
+- Mandatory field validation
 - Input format validation (email, phone, URL, salary)
 - Boundary testing (age limits)
 - Data consistency (Age vs Date of Birth)
 - Negative scenarios and invalid inputs
 
 **Key Findings:**
-- System accepts invalid phone numbers
-- Salary field allows negative values
-- Age validation is inconsistent
-- System accepts contradictory data (Age vs Date of Birth)
-- Address field validation is weak
+- Name field accepts invalid data
+- Age validation is broken
+- System allows inconsistent Age and Date of Birth
+- Salary is incorrectly displayed
+- System accepts future dates of birth
+- Mandatory fields are not enforced
+- Weak validation in phone and address fields
+- UI issues in results table
 
 📄 Files:
 - `test_cases.md`
-- `bug_reports.md` *(in progress)*
+- `bug_reports.md`
 
 ---
 
 ## 🎯 Current Focus
 
-- Improving QA fundamentals
+- Strengthening QA fundamentals
 - Learning API Testing with Postman
-- Preparing for QA Junior positions
+- Preparing for QA Junior roles
 
 ---
 
 ## 🚀 Goal
 
 To land my first role as a QA Tester and continue growing in software testing and automation.
+
+---
