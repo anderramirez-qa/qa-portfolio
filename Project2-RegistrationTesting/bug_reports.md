@@ -136,3 +136,36 @@ Open
 
 ---
 
+## 🐞 BG005 - Date of Birth field accepts non-existing/future dates
+
+### Environment
+Windows 10, Google Chrome (Version 147.0.7727.56)
+
+### Priority
+Medium
+
+### Severity
+Medium
+
+### Description
+Date of Birth field accepts any date, past and future
+
+### Steps to Reproduce
+1. Open Employee Registration form
+2. Choose any future date in Date of Birth field (e.g., 01/01/2050)
+3. Fill the remaining fields with valid data
+4. Click on "submit"
+
+### Expected Result
+- The system should not allow the selection of any future or non-existent dates
+
+### Actual Result
+- Systems accepts any date, past and future, in the Date of Birth field
+- Registration is completed successfully
+
+### Status
+Open
+
+---
+
+## 🐞 BG006 - 
