@@ -1,7 +1,7 @@
 ## Project: GeekRetail Registration Testing
 
 # 🐞 Bug Reports - GeekRetail
-Test form: https://testing1.geekqa.net/
+Application: https://testing1.geekqa.net/
 
 ---
 
